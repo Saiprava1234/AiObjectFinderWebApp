@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Koulen&family=Lora:ital,wght@1,500&family=Macondo&family=Merriweather:ital,wght@1,700&family=Source+Code+Pro&display=swap');
+body{
+    background-size: cover;
+}
+.heading{
+    font-size: 25px;
+    width: 100%;
+    margin-top: 0%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#l{
+    font-size: 16px;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+}
+input{
+    width: 400px;
+    font-size: 18px;
+    border-width: 3px;
+    text-align:  center;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+}
+#ob{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255);
+    color: black;
+    padding: 4px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 750px;
+}
+h3{
+    margin: 10px;
+}
+#status{
+    animation-name: stattus;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#objectfound{
+    animation-name: object;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#start{
+    font-size: 20px;
+    font-family: 'Koulen', cursive;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: darkgreen;
+    animation-name: staart;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#start:hover{
+    background: rgb(0, 183, 0);
+    color: black;
+    animation-name: staart;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#start:active{
+    background: rgb(74, 153, 74);
+    color: rgb(31, 57, 28);
+    animation-name: staart;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+canvas{
+    animation-name: canvas;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+@keyframes staart
+{
+    from{
+        box-shadow: 0px 0px 50px rgb(24, 91, 0);
+    }
+    to{
+        box-shadow: 0px 0px 50px rgb(148, 255, 106)
+    }
+}
+@keyframes stattus
+{
+    from{
+        box-shadow: 0px 0px 22px rgb(255, 0, 0);
+    }
+    to{
+        box-shadow: 0px 0px 22px rgb(255, 0, 255);
+    }
+}
+@keyframes object
+{
+    from{
+        box-shadow: 0px 0px 22px rgb(255, 187, 0);
+    }
+    to{
+        box-shadow: 0px 0px 22px rgb(251, 255, 0);
+    }
+}
+@keyframes canvas
+{
+    from{
+        box-shadow: 0px 0px 30px white;
+    }
+    to{
+        box-shadow: 0px 0px 40px black;
+    }
+}
